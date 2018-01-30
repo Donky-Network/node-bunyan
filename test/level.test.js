@@ -56,6 +56,12 @@ test('log.level(<name>)', function (t) {
     t.end();
 });
 
+test('log.level(<name>)', function (t) {
+    log1.emergency('emergency');
+    t.equal(log1.level(), bunyan.EMERGENCY);
+    t.end();
+});
+
 // A trick to turn logging off.
 // See <https://github.com/trentm/node-bunyan/pull/148#issuecomment-53232979>.
 test('log.level(FATAL + 1)', function (t) {
