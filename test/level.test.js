@@ -57,7 +57,7 @@ test('log.level(<name>)', function (t) {
 });
 
 test('log.level(<name>)', function (t) {
-    log1.emergency('emergency');
+    log1.level('emergency');
     t.equal(log1.level(), bunyan.EMERGENCY);
     t.end();
 });
