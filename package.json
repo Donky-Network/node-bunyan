@@ -1,5 +1,5 @@
 {
-  "name": "bunyan",
+  "name": "@donky/bunyan",
   "version": "2.0.3",
   "description": "a JSON logging library for node.js services",
   "author": "Trent Mick <trentm@gmail.com> (http://trentm.com)",
@@ -11,9 +11,6 @@
     "type": "git",
     "url": "git://github.com/trentm/node-bunyan.git"
   },
-  "engines": [
-    "node >=0.10.0"
-  ],
   "keywords": [
     "log",
     "logging",
@@ -25,9 +22,6 @@
   "dependencies": {
     "exeunt": "^1.1.1"
   },
-  "// dtrace-provider": "required for dtrace features",
-  "// mv": "required for RotatingFileStream",
-  "// moment": "required for local time with CLI",
   "optionalDependencies": {
     "dtrace-provider": "~0.8",
     "mv": "~2",
